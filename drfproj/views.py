@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 from drfapp.serializers import StudentSerializer
-from drfapp.models import student
+from drfapp.models import Student
 class TesView(APIView):
     def get(self, request, *args, **kwargs):
         data = {

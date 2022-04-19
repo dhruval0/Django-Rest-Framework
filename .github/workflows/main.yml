@@ -41,11 +41,11 @@ jobs:
         
       - name: make migrations for new models
         run: | 
-          python ./drfproj/manage.py makemigrations
+          python manage.py makemigrations
         
       - name: make changes got for migrate
         run: | 
-          python ./drfproj/manage.py migrate
+          python manage.py migrate
           
       - name: Start/Restart application
         run: |
