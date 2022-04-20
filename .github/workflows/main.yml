@@ -49,7 +49,7 @@ jobs:
           
       - name: Start/Restart application
         run: |
-          pm2 startOrRestart ecosystem.config.js
+          python manage.py runserver
       
       - name: Go into non-elevated User
         run: |
