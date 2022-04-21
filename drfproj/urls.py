@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     # path('', TesView.as_view(), name='test'),
-    path('api/v1/student/',include("drfapp.urls"))
+    path('api/v1/blog/',include("blog.urls"))
 ]
